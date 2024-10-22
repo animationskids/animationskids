@@ -1,0 +1,173 @@
+@font-face {
+  font-family: 'Kiddosy Free Outline';
+  src: url('caminho/para/a/fonte/Kiddosy-Free-Outline.woff2') format('woff2'),
+  url('caminho/para/a/fonte/Kiddosy-Free-Outline.woff') format('woff');
+}
+
+body {
+    overflow: hidden;
+  }
+
+  button.voltar{
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    color: white;
+    border: none; 
+    background-color: transparent;
+  }
+
+  .container{
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  #tetris {
+    margin-top: 150px;
+    width: 360px;
+    border: 1px solid rgb(255, 255, 255); 
+    padding: 20px;
+  }
+  #canvas {
+    border: 1px solid white;
+    width: 200px;
+    height: 440px;
+    background-color: #000000;
+    position: relative;
+    color: #fff;
+  }
+  #canvas h1 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 200px;
+  }
+  .piece {
+    border: 1px solid white;
+    position: absolute;
+  }
+  
+  #start{
+    animation: blink .7s steps(2, start) infinite;
+    background: #0f0020;
+    border-radius: 10px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 28px;
+  }
+  
+  .red{
+    color: #f00000;
+    text-align: center;
+  }
+  
+  .square {
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    border: 1px solid white;
+  }
+  .type0 {
+    background-color: #a000f0;
+  }
+  .type1 {
+    background-color: #00f0f0;
+  }
+  .type2 {
+    background-color: #f0a000;
+  }
+  .type3 {
+    background-color: #0000f0;
+  }
+  .type4 {
+    background-color: #00f000;
+  }
+  .type5 {
+    background-color: #f00000;
+  }
+  .type6 {
+    background-color: #f0f000;
+  }
+  #next_shape {
+    position: relative;
+    background-color: #000;
+    border: 1px solid white;
+    width: 110px;
+    height: 110px;
+  }
+  #info {
+    border: 1px solid white;
+    background-color: #000;
+    color: #fff;
+    float: right;
+    width: 110px;
+    height: 420px;
+    padding: 10px;
+  }
+  .glow-on-hover {
+    border: none;
+    outline: none;
+    color: #fff;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 100%;
+    padding: 20px;
+    font-family: 'Kiddosy Free Outline', sans-serif;
+  }
+  
+  .glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  .glow-on-hover:active {
+    color: #000
+  }
+  
+  .glow-on-hover:active:after {
+    background: transparent;
+  }
+  
+  .glow-on-hover:hover:before {
+    opacity: 1;
+  }
+  
+  .glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+  .glow-on-hover:after {
+      z-index: -1;
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgb(3, 3, 3); /* Fundo transparente */
+      left: 0;
+      top: 0;
+      border-radius: 10px;
+    }

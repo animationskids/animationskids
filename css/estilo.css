@@ -1,0 +1,679 @@
+/*Fonte*/
+@import url('https://fonts.cdnfonts.com/css/cartoonnetwork');
+
+@font-face {
+  font-family: 'Kiddosy Free Outline';
+  src: url('caminho/para/a/fonte/Kiddosy-Free-Outline.woff2') format('woff2'),
+  url('caminho/para/a/fonte/Kiddosy-Free-Outline.woff') format('woff');
+}
+
+/*Body*/
+*, 
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0px;
+}
+
+
+/*ESTRELA*/
+.avaliacao {
+  width: 100%;
+  height: 100px;
+  background: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items:first baseline;
+}
+
+.rating {
+  width: 210px;
+  height: 30px;
+  background: none;
+}
+
+.box{
+  width: auto;
+  height: 700px;
+  background: none;
+}
+
+/*H1*/
+h1{
+  display:inline;
+  padding-inline: none;
+  font-family: 'Kiddosy Free Outline', sans-serif;
+  font-size: 4em;
+  color: rgb(0, 0, 0);
+} 
+
+h1.azul{
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 0px 10px blue,
+  0px 0px 10px blue,
+  0px 0px 10px blue,
+  0px 0px 10px blue,
+  0px 0px 10px blue;
+}
+
+h1.vermelho{
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 0px 10px red,
+  0px 0px 10px red,
+  0px 0px 10px red,
+  0px 0px 10px red,
+  0px 0px 10px red;
+}
+
+h1.verde{
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 0px 10px rgb(0, 255, 34),
+  0px 0px 10px rgb(0, 255, 34),
+  0px 0px 10px rgb(0, 255, 34),
+  0px 0px 10px rgb(0, 255, 34),
+  0px 0px 10px rgb(0, 255, 34);
+}
+
+h1.laranja{
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 0px 10px #ffcc00,
+  0px 0px 10px #ffcc00,
+  0px 0px 10px #ffcc00,
+  0px 0px 10px #ffcc00,
+  0px 0px 10px #ffcc00;
+}
+
+.animations{
+color: white;
+}
+
+h1.azul2{
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 0px 10px blue,
+  0px 0px 10px blue,
+  0px 0px 10px blue,
+  0px 0px 10px blue,
+  0px 0px 10px blue;
+
+}
+
+h1.vermelho2{
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 0px 10px red,
+  0px 0px 10px red,
+  0px 0px 10px red,
+  0px 0px 10px red,
+  0px 0px 10px red;
+}
+
+h1.verde2{
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 0px 10px rgb(0, 255, 34),
+  0px 0px 10px rgb(0, 255, 34),
+  0px 0px 10px rgb(0, 255, 34),
+  0px 0px 10px rgb(0, 255, 34),
+  0px 0px 10px rgb(0, 255, 34);
+}
+
+.laranja2{
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 0px 10px #ffcc00,
+  0px 0px 10px #ffcc00,
+  0px 0px 10px #ffcc00,
+  0px 0px 10px #ffcc00,
+  0px 0px 10px #ffcc00;
+}
+
+.animations2{
+  color: #ffffff;
+  text-shadow: 0px 0px 10px rgb(8, 8, 8),
+  0px 0px 10px rgb(8, 8, 8),
+  0px 0px 10px rgb(8, 8, 8),
+  0px 0px 10px rgb(8, 8, 8),
+  0px 0px 10px rgb(8, 8, 8),
+  0px 0px 10px rgb(8, 8, 8);
+}
+
+/*Body*/
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/*Navbar*/  
+.navbar {
+  width: 100%;
+  background: rgb(0, 0, 0); /* Fundo transparente */
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Cartoon Block Old', sans-serif;
+  position:fixed;
+  z-index: 999;
+}
+
+.navbar .nav-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+  
+.navbar .nav-items a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+  font-family: 'Cartoon Block Old', sans-serif;
+  transition: color 0.3s ease; /* Suave transição ao passar o mouse */
+}
+  
+.navbar .nav-items a:hover {
+  color: #ffcc00; /* Cor de destaque ao passar o mouse */
+}
+
+/*Banner*/  
+.banner {
+  width: 100vw; /* 100% da largura da tela */
+  height: 650px; /* Altura fixa */
+  overflow: hidden; /* Garante que qualquer conteúdo que ultrapasse o tamanho do banner seja escondido */
+
+}
+  
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Faz com que a imagem cubra toda a área do banner, mantendo a proporção */
+  display: block; /* Remove qualquer espaço extra abaixo da imagem */
+}
+
+.banner-pai{
+  height: 39vw;
+  background-color: none;
+  display: flex;
+  align-items:end;
+}
+  
+/*Carousel*/  
+.section-title {
+  font-weight: bold;
+  color: #ffcc00; /* Cor amarela */
+  text-align: center; /* Centraliza o texto */
+  margin: 20px 0; /* Margem superior e inferior */
+  font-family: 'Cartoon Block Old', sans-serif; /* Fonte do Cartoon Network */
+}
+  
+.card {
+  margin: 30px auto;
+  width: 400px;
+  height: 300px;
+  border-radius: 40px;
+  box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+  transition: 0.4s;
+  position: relative;
+}
+
+#contrast-toggle{
+  height: 30px;
+  width: 30px;
+  margin-right: 15px;
+}
+#increase{
+  width: 35px;
+  height: 35px;
+  margin-right: 15px;
+}
+#decrease {
+  width: 35px;
+  height: 35px;
+}
+/*Celular*/
+@media only screen and (max-width: 430px) {
+  .navbar .nav-items a {
+    margin-right: 10px;
+    font-size: 10px;
+    height: 10px;
+  }
+  .navbar .nav-items svg {
+    margin-right: 0px;
+  }
+  .wrapper a{
+    width: 50px;
+    margin-right: 5px;
+  }
+  img{
+    width: 170px;
+    height: 30px;
+  }
+  .card {
+    height: 90px;
+    width: 110px;
+  }
+  .banner{
+    height: 150px;
+    width: 100%;
+  }
+  .section-title{
+    font-size: 20px;
+  }
+  .slider_info{
+    font-size: 20px;
+  }
+
+  .glow-on-hover{
+    height: 15px;
+    width: 230px; 
+    font-size: 10px;
+  }
+  .banner-pai{
+    height: 52vw;
+  }
+  #contrast-toggle{
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
+  }
+  #increase{
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+  }
+  #decrease {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+/*Notebook*/
+@media only screen and (max-width: 1920px) {
+  .banner-pai{
+    height: 45vw;
+  }
+  .banner{
+    height: 40vw;
+  }
+}
+/*Motorola*/
+@media only screen and (max-width: 1080px) {
+  .navbar .nav-items a {
+    margin-right: 10px;
+    font-size: 10px;
+    height: 10px;
+  }
+  .navbar .nav-items svg {
+    margin-right: 0px;
+  }
+  .wrapper a{
+    width: 50px;
+    margin-right: 5px;
+  }
+  img{
+    width: 170px;
+    height: 30px;
+  }
+  .card {
+    height: 90px;
+    width: 110px;
+  }
+  .banner{
+    height: 150px;
+    width: 100%;
+  }
+
+  .slider_info{
+    font-size: 20px;
+  }
+  .glow-on-hover{
+    height: 15px;
+    width: 230px; 
+    font-size: 10px;
+  }
+  .banner-pai{
+    height: 47vw;
+  }
+  #contrast-toggle{
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
+  }
+  #increase{
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+  }
+  #decrease {
+    width: 15px;
+    height: 15px;
+  }
+}
+  
+.card .card_image {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+  position: relative;
+}
+  
+.card .card_image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+  object-fit: cover;
+  position: relative;
+}
+  
+.card:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25), -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+}
+  
+.title-white {
+  color: white;
+}
+  
+.title-black {
+  color: black;
+}
+  
+.apps-section {
+  padding: 30px;
+  background-color: #f4f4f4; /* Cor de fundo clara para contraste */
+}
+  
+.apps-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 3em;
+}
+  
+.owl-carousel .item {
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px; /* Ajuste conforme necessário */
+  position: relative;
+}
+  
+.owl-carousel .item img {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+  
+/*Descubra mais jogos*/
+button{
+  background-color: rgb(0, 0, 0); /* Fundo transparente */
+  border: none;
+  }
+
+/* Seta */
+#btn-topo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: none;
+  color: none ;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  display: none; /* Ocultar o botão por padrão */
+  background: none;
+}
+
+
+/*footer*/
+footer{
+  background-color: #000;
+}
+
+.footer-pagina{
+  text-align: i;
+  display: inline;
+  text-decoration: none;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+  left: 200px;
+}
+
+.footer-pagina:hover{
+  display: inline;
+  text-decoration: none;
+  color: rgb(146, 146, 146);
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 1em;
+}
+
+.wrapper {
+    display: inline-flex;
+    list-style: none;
+    height: 120px;
+    width: 100%;
+    padding-top: 40px;
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+  }
+  
+.wrapper .icon {
+  position: relative;
+  background: #fff;
+  border-radius: 50%;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+  
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #fff;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+  
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #fff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+  
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+  
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+  
+.wrapper .tiktok:hover,
+.wrapper .tiktok:hover .tooltip,
+.wrapper .tiktok:hover .tooltip::before {
+  background: #ff0077;
+  color: #fff;
+}
+
+.wrapper .spotify:hover,
+.wrapper .spotify:hover .tooltip,
+.wrapper .spotify:hover .tooltip::before {
+  background: #34b600;
+  color: #ffffff;
+}
+
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before {
+  background: #ff0000;
+  color: #ffffff;
+}
+
+.wrapper .pinterest:hover,
+.wrapper .pinterest:hover .tooltip,
+.wrapper .pinterest:hover .tooltip::before {
+  background: #ff0000;
+  color: #ffffff;
+}
+  
+/*.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background: #111;
+  color: #fff;
+}*/
+
+.wrapper .threads:hover,
+.wrapper .threads:hover .tooltip,
+.wrapper .threads:hover .tooltip::before {
+  background: #050505;
+  color: #fff;
+}
+  
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #e100ff;
+  color: #fff;
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background: #003cff;
+  color: #fff;
+}
+  
+/*.wrapper .twitter{
+  color: #000;
+}*/
+
+.wrapper .threads{
+  color: #000;
+}
+  
+.wrapper .facebook{
+  color: #000;
+}
+  
+.wrapper .instagram{
+  color: #000;
+}
+
+.wrapper .youtube{
+  color: #000;
+}
+
+.wrapper .spotify{
+  color: #000;
+}
+
+.wrapper .tiktok{
+  color: #000;
+}
+
+.wrapper .pinterest{
+  color: #000;
+}
+
+h4{
+  color: white;
+}
+hr{
+  border-color: rgb(27, 27, 27);
+}
+
+/*Colorido*/
+.glow-on-hover {
+  border: none;
+  outline: none;
+  color: #fff;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 100%;
+  padding: 20px;
+  font-family: 'Cartoon Block Old', sans-serif; /* Fonte do Cartoon Network */
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0); /* Fundo transparente */
+  left: 0;
+  top: 0;
+ border-radius: 10px;
+}

@@ -1,0 +1,80 @@
+/* Estilos padrões (modo claro) */
+body {
+    background-color: #f5f5e4; 
+    color: #000000;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    padding: 10px;
+    text-align: center;
+}
+
+button {
+    padding: 0px;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+body.dark-mode h1.animations2{
+    color: black;
+    text-shadow: 0px 0px 10px #ffcc00,
+    0px 0px 10px #ffcc00,
+    0px 0px 10px #ffcc00,
+    0px 0px 10px #ffcc00,
+    0px 0px 10px #ffcc00,
+    0px 0px 10px #ffcc00;
+}
+ 
+h2.section-title{
+    color: rgb(172, 0, 172);
+}
+
+body.dark-mode h2.section-title{
+    color: #ffcc00;
+}
+
+.voltar{
+    color: black;
+}
+
+body.dark-mode button.voltar{
+    color: rgb(255, 255, 255);
+}
+
+.frente{
+    color: black;
+}
+
+body.dark-mode button.frente{
+    color: rgb(255, 255, 255);
+}
+
+.navbar .nav-items button:hover {
+    color: #ffcc00; /* Cor de destaque ao passar o mouse */
+  }
+
+/* Estilos para o modo escuro */
+body.dark-mode {
+    background-color: rgb(8, 8, 8); /* Fundo transparente */
+    color: #ffffff;
+}
+
+body.dark-mode #increase:hover {
+    color: #ffcc00; /* Cor de destaque ao passar o mouse */
+}
+
+body.dark-mode #decrease:hover {
+    color: #ffcc00; /* Cor de destaque ao passar o mouse */
+}
+
+body #decrease:hover {
+    color: #ffcc00; /* Cor de destaque ao passar o mouse */
+}
+
+body #increase:hover {
+    color: #ffcc00; /* Cor de destaque ao passar o mouse */
+}

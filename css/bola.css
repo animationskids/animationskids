@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .game-container {
+    text-align: center;
+  }
+  
+  .circle {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    animation: moveCircle 2s infinite;
+  }
+  
+  @keyframes moveCircle {
+    0% { left: 0; }
+    50% { left: calc(100% - 100px); }
+    100% { left: 0; }
+  }
+  
+  button{
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    color: rgb(0, 0, 0);
+    border: none; 
+    background-color: transparent;
+  }
